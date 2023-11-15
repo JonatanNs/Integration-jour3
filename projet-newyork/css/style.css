@@ -1,0 +1,122 @@
+/********************************************************
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Source Code Pro', monospace;
+
+# Exercice final: New York
+
+L'ensemble du contenu fait une largeur de 980px et est centré dans la fenêtre du navigateur.
+L'ensemble du contenu texte à un interlignage de 1.5
+
+## Polices de caractère
+- Source Sans Pro par défaut (Google Font), le gras est la version 600 
+- Courgette : titres, menu et citation.
+Le fichier de la police est fourni, mais dans sa version compatible pour le print. Il sera nécessaire de la convertir pour le web.
+
+## Taille des textes (à transformer en valeurs relatives)
+Par défaut : 18px > 1.125rem
+Menu : 20px > 1.25rem
+Titre du site : 40px > 3rem
+Titres rubriques :  35px > 2.188rem
+Titres sous-rubriques : 25px > 1.563rem
+Citation : 25px > 1.563rem
+Pictos réseaux sociaux : 30px > 1.875rem
+Copyright : 14px > 0.875rem
+
+## Couleurs
+Texte : #444
+bleu foncé : #003884 
+bleu moyen : #4f89b9
+fond de la citation : #d7e1ef
+
+## Liens
+Les liens des rubriques du menu sont des ancres et amènent directement aux rubriques auxquelles elles correspondent.
+Les pictos des réseaux sociaux sont des Font Awesome.
+Le lien du pied de page renvoi sur les conditions d'utilisation du matériel pédagogique de la 3WA : "https://3wa.fr/propriete-materiel-pedagogique/
+********************************************/
+
+html{
+    font-size: 18px;
+}
+
+body{
+  width: 980px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*font-family: 'Source Code Pro', monospace;*/
+  line-height: 1.5;
+}
+
+p{
+    text-align: left;
+}
+
+.header > h1{
+    font-size: 3rem;
+}
+
+.header, .main >article h3, .sceau, .liberty, .manhattan, .governors, .ellis, .staten, .habitants{
+    color: #003884;
+    font-weight: 600;
+}
+
+.sommaire{
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.font-bleu{
+    background-color: #d7e1ef;
+    color: #003884;
+    font-size: 1.563rem;
+}
+
+.main >article h2{
+    color: #4f89b9;
+    font-size: 2.188rem;
+}
+
+.ul-drapeau{
+    text-align: left;
+}
+
+#img-flag, #bridge{
+    float: right;
+    margin: 15px;
+}
+
+#statue-liberty, #taxi{
+    float: left;
+    margin: 10px;
+}
+
+
+.brooklyn, .queens, .bronx, .long, .narrows, .world, .castors, .amerindien, .aigle{
+    font-style: italic;
+    color:  #003884;
+}
+
+
+.footer{
+    border-top: 3px solid #003884 ;
+    font-size: 0.875rem;
+    color: #003884 ;
+}
+
+.p-3wa{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.p-denos{
+    text-align: center;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.reseaux{
+    margin-bottom: 15px;
+}
